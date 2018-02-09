@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+		<title>Responsive Content Slider</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="Shortcut Icon" href="images/sm-favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="function.js"></script>
+ 	</head>
+	<body>
+		<!-- section for the content wherein your trigger will be featured -->
+		<section class="content-wrap">
+		  <div class="content">
+		    <h1>Lightbox for Gallery</h1>
+		    <p>Lightboxes can be used to display all kinds of information. Typically, clients want one of a handful of things: content, videos, forms, or galleries. The gallery functionality is a bit different, so it has its own section here. You can view the others in a separate section. But all the others can be found here. Click the button to see the lightbox.</p>
+		    <p>
+		      <a href="#gallery" class="button">Show me the Gallery</a>
+		    </p>
+		  </div><!--/content-->
+		</section><!--/content-wrap-->
+
+		<!-- section for our lightbox -->
+		<section class="lightbox-wrap">
+		  <div class="lightbox">
+		    <a id="close">x</a>
+		    <!-- note the "ids" match the "hrefs" of our trigger buttons -->
+		    <div id="gallery" class="cont">
+          <a class="galnav prev">&laquo;</a>
+          <a class="galnav next">&raquo;</a>
+          <div class="gal-wrap">
+            <img src="images/pexels-photo-24821.jpg" />
+            <img src="images/pexels-photo-110575.jpeg" />
+            <img src="pexels-photo-853168.jpeg" />
+          </div><!--/gal-wrap-->
+		    </div><!--/cont-->
+		  </div><!--/ligthbox-->
+		</section><!--lightbox-wrap-->
+	</body>
+</html>
