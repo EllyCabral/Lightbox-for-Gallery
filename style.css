@@ -47,50 +47,6 @@ a.button:hover {
   color: #fff;
   background: #4d216e;
 }
-form {
-  clear: both;
-  overflow: hidden;
-  width: 100%;
-}
-form input, form textarea {
-  width: 96%;
-  padding: 10px 2%;
-  margin: 0 0 10px 0;
-  border: 0;
-  border-bottom: 2px solid #ccc;
-  background: #f1f1f1;
-  height: auto;
-  font: normal normal 14px/20px 'Arial', sans-serif;
-  letter-spacing: 0.02em;
-  color: #555;
-}
-form input::placeholder, form textarea::placeholder {
-  color: #888;
-}
-form input:invalid {
-  border-bottom: 2px solid #dd0000;
-  color: #dd0000;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-}
-form input[type="submit"] {
-  width: auto;
-  font: normal bold 15px/15px 'Arial', sans-serif;
-  color: #4d216e; 
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border: 2px solid #4d216e;
-  cursor: pointer;
-}
-form input[type="submit"]:hover {
-  color: #fff;
-  background: #4d216e;
-}
 
 /* LIGHTBOX */
 .lightbox-wrap {
@@ -133,7 +89,7 @@ form input[type="submit"]:hover {
   padding: 5px;
   text-align: center;
   float: right;
-  margin: -10px -10px 0 0;
+  margin: -10px -10px -22px 0;
   cursor: pointer;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -150,7 +106,8 @@ form input[type="submit"]:hover {
   background: #660000;
 }
 .cont {
-  padding: 50px;
+  margin: 0 50px;
+  padding: 50px 0;
   clear: both;
   overflow: hidden;
   display: none;
@@ -167,14 +124,28 @@ form input[type="submit"]:hover {
   color: #fff;
   text-align: center;
   font: normal bold 30px/30px 'Arial', sans-serif;
-  padding: 10% 10px;
+  padding: 30% 10px;
+  cursor: pointer;
 }
 .galnav:hover {
   background: rgba(255, 255, 255, .5);
+  color: #666;
 }
 .galnav.prev {
-  left: 30px;
+  left: 0px;
 }
 .galnav.next {
-  right: 30px;
+  right: 0px;
+}
+.gal-wrap {
+  width: 100%;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.gal-wrap img {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
 }
